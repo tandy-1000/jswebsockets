@@ -1,6 +1,6 @@
 # Package
 version       = "0.1.4"
-author        = "stisa"
+author        = "stisa & tandy1000"
 description   = "Wrapper for js websockets"
 license       = "MIT"
 
@@ -14,7 +14,7 @@ import os
 task docs, "Build docs":
   mkdir "docs"
   exec "nim doc --backend:js --verbosity:0 --hints:off -o:docs src/jswebsockets.nim"
-  exec "rm docs.out nimdoc.out.css"
+  exec "rm docs.out nimdoc.out.css docs/index.html"
 
 task examples, "Build examples":
   mkdir "docs/examples"
