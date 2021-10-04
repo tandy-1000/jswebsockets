@@ -1,14 +1,10 @@
-JsWebsockets
+websockets
 ----
 
-Beginning of a wrapper for websockets, for the javascript backend of [nim](https://nim-lang.org)
-  
-[Examples](http://stisa.space/jswebsockets)  
-
-[Generated Docs](http://stisa.space/jswebsockets/jswebsockets.html)
+Websockets wrapper for the [nim](https://nim-lang.org) JavaScript backend.
 
 ```nim
-import jswebsockets
+import websockets
 
 var
   socket = newWebSocket("ws://echo.websocket.org/")

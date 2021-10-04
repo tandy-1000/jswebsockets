@@ -1,4 +1,4 @@
-import ../src/jswebsockets
+import ../src/websockets
 
 var socket = newWebSocket("ws://echo.websocket.org/")
 var outputid = "output" # nicer syntax for appending
