@@ -13,7 +13,8 @@ import os
 
 task docs, "Build docs":
   mkdir "docs"
-  exec "nim doc --backend:js --verbosity:0 --hints:off -o:docs/jswebsockets.html ./src/jswebsockets.nim"
+  exec "nim doc --backend:js --verbosity:0 --hints:off -o:docs src/jswebsockets.nim"
+  exec "rm docs.out nimdoc.out.css"
 
 task examples, "Build examples":
   mkdir "docs/examples"
